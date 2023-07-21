@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Cafe coffee day</title>
+    <style>
+        .carousel-indicators [data-bs-target] {
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+        }
+
+       
+
+        a {
+            text-decoration: none;
+            color: gray;
+        }
+        
+
+        b {
+            color: gray
+        }
+
+        
+
+       
+    </style>
+</head>
+
+<body>
+
+    
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light fw-italic fs-5 " style="height:20%;">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="/index.html"><img src="/ccdlogo.png" class="px-5"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item ">
+                        <a class=" nav-link text-danger hover-underline-animation ps-4" aria-current="page"
+                            href="/CafeMenu.html">Cafe Menu</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-danger hover-underline-animation ps-4 " href="#">E-shop
+                            <i class="fa-solid fa-cart-shopping" style="color: #ff0000;"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger hover-underline-animation ps-4 " aria-current="page"
+                            href="#">Order Online</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger  hover-underline-animation ps-4" aria-current="page"
+                            href="#">Cafe finder</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger hover-underline-animation ps-4" aria-current="page"
+                            href="#">Mobile App</a>
+                    </li>
+
+                </ul>
+                <div class="d-flex">
+                    <a class="nav-link text-danger p-4" aria-current="page" href="#"><i
+                            class="fa-solid fa-magnifying-glass" style="color: #fa0000;"></i></a>
+
+                    <a class="nav-link text-danger p-4 " aria-current="page" href="#" data-bs-container="body"
+                        data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover"><i
+                            class="fa-regular fa-bell fa-shake" style="color: #ff0000;"></i></a>
+                            
+
+                    <a class="nav-link text-danger p-4" aria-current="page" href="#" data-bs-toggle="modal"
+                        data-bs-target="#modalRegister"><i class="fa-regular fa-user" style="color: #ff0000;"></i></a>
+                </div>
+
+
+            </div>
+        </div>
+    </nav>
+     <!-- login -->
+
+
+
+     <div class="modal fade" id="modalRegister" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-danger">
+                <div class="modal-body">
+
+                    <button type="button" class="btn-close " style="float: right;" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    <div class="text-center fw-bold fs-3 text-light">LOGIN</div>
+                    <div class="text-center fw-bold fs-7 p-1 text-light">To create your profile</div>
+                    <br>
+
+
+                    <input type="email" class="form-control bg-danger text-light mx-auto" id="exampleInputEmail1"
+                        style="border-radius:40px;  border: 3px white solid; width: 70%;" aria-describedby="emailHelp"
+                        placeholder="Username">
+                    <input type="password" class="form-control bg-danger text-light mx-auto my-3 "
+                        id="exampleInputPassword" style="border-radius:40px;  border: 3px white solid; width: 70%;"
+                        aria-describedby="password    " placeholder="Password">
+                    <div id="forgetPassword" class="form-text  text-center"><a href="" class=" text-light">forget
+                            Password ?</a></div>
+                    <div class="row">
+                        <button type="submit" class="btn btn-light text-danger fw-bold  col-8 mx-auto my-3 "
+                            style="border-radius:40px;"> Submit</button>
+                    </div>
+                    <hr class="hr text-light" />
+                    <div class="row text-light">
+
+                        <div class="col mx-auto my-3 col-5">Login With<i class="fa-brands fa-square-facebook  p-2"
+                                style=" color: #475e85;font-size:25px"></i>
+                            <i class="fa-brands fa-linkedin  " style="color: #475e85;font-size:25px"></i>
+                        </div>
+                    </div>
+                    <div class="row  ">
+                        <div class="col mx-auto  col-6">Don't have account? <a href="/index.html" data-bs-toggle="modal"
+                            data-bs-target="#modalRegister" data-bs-dismiss="modal" style="color:white">Signup</a>
+                        </div>
+                    </div>
+                    <hr class="hr text-light" />
+
+                    <div class="row">
+                        <div class="col mx-auto  col-8"> <a href="" style="color:white">DOWNLOAD</a> THE MOBILE APP
+                            TODAY</div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- menu -->
+    <div class="container-fluid">
+        <img src="/cafe-menuhead.jpg" class="img-responsive img-fluid" alt="">
+     </div>
+     <div class="row text-center p-5 ">
+        <div class="col"><a style="color: black; font-weight: bold;" href="#" onclick="change1()">HOT CLASSICS</a></div>
+        <div class="col"><a style="color: black; font-weight: bold;" href="#" onclick="change2()" >ALL TIME CHILLERS</a></div>
+        <div class="col"><a style="color: black; font-weight: bold;" href="#" onclick="change3()">All TIME CHILLERS</a></div>
+        <div class="col"><a style="color: black; font-weight: bold;" href="#" onclick="change4()">ALL DAY DELIGHTS</a></div>
+        <div class="col"><a style="color: black; font-weight: bold;" href="#" onclick="change5()">SWEET TOOTHX32</a></div>
+        <div class="col"><a style="color: black; font-weight: bold;" href="#" onclick="change6()">NUTRITIONAL INFO</a></div>
+     </div>
+    
+    <div class="container-fluid">
+        <img id="myImage" class="img-responsive img-fluid" src="/HOTCLASSICS.jpg">
+    </div>
+    <script>
+    
+    function change1(){
+    document.getElementById('myImage')
+    .src="/HOTCLASSICS.jpg";}
+    function change2(){
+    document.getElementById('myImage')
+    .src="/1atc.jpg";}
+    function change3(){
+    document.getElementById('myImage')
+    .src="/2atc.jpg";}
+    function change4(){
+    document.getElementById('myImage')
+    .src="/add.jpg";}
+    function change5(){
+    document.getElementById('myImage')
+    .src="/st.jpg";}
+    function change6(){
+    document.getElementById('myImage')
+    .src="/HOTCLASSICS.jpg";}
+
+</script>
+
+    
+
+    <!-- social media -->
+    <div class="container-fluid bg-light text-center" style="padding-top: 3%;padding-bottom: 1%;">
+        <div>
+            <i class="fa-brands fa-solid fa-instagram p-2 " style="color: #ff0095; font-size:40px"></i>
+            <i class="fa-brands fa-square-facebook  p-2" style=" font-size:40px"></i>
+            <i class="fa-brands fa-youtube p-2" style="color: #ff0000; font-size:40px"></i>
+            <i class="fa-brands fa-square-twitter p-2" style="color: #5791f4;font-size:40px"></i>
+            <i class="fa-brands fa-linkedin p-2 " style="color: #475e85;font-size:40px"></i>
+            <br>
+        </div>
+        <hr class="hr" />
+    </div>
+    <div class="container-fluid bg-light p-2 g-0">
+        <div class="row p-5">
+            <div class="col">
+                <ul style="list-style: none;"><b>Quick links</b>
+                    <a href="">
+                        <li>cafe menus</li>
+                    </a>
+                    <a href="">
+                        <li>cafe finder</li>
+                    </a>
+                    <a href="">
+                        <li>customer care</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="col">
+                <ul style="list-style: none;"> <b>Cafe Menu</b>
+                    <a href="">
+                        <li> Food For Mood </li>
+                    </a>
+                    <a href="">
+                        <li> Hot Classic </li>
+                    </a>
+                    <a href="">
+                        <li> All-Time Chillers</li>
+                    </a>
+                    <a href="">
+                        <li> All-Day Delights</li>
+                    </a>
+                    <a href="">
+                        <li> Sweet Tooth X 32</li>
+                    </a>
+                    <a href="">
+                        <li> Nutritional Info</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="col">
+                <ul style="list-style: none;"><b> Shop</b>
+                    <a href="">
+                        <li> Coffee Mugs & Cups</li>
+                    </a>
+                    <a href="">
+                        <li> Coffee Makers & Wakecup</li>
+                    </a>
+                    <a href="">
+                        <li> Coffee Powders</li>
+                    </a>
+                    <a href="">
+                        <li> Gifts</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="col">
+                <ul style="list-style: none;"><b>Business</b>
+                    <a href="">
+                        <li>Lease Enquiry </li>
+                    </a>
+                    <a href="">
+                        <li> Advertise With Us</li>
+                    </a>
+                    <a href="">
+                        <li> Coffee Vending Machine</li>
+                    </a>
+                    <a href="">
+                        <li> Outdoor Catering Service</li>
+                    </a>
+                    <a href="">
+                        <li> Contact Us</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="col">
+                <ul style="list-style: none;"><b>About Us</b>
+                    <a href="">
+                        <li>Awards</li>
+                    </a>
+                    <a href="">
+                        <li> Business</li>
+                    </a>
+                    <a href="">
+                        <li> Governance</li>
+                    </a>
+                    <a href="">
+                        <li> Bean to Cup</li>
+                    </a>
+                    <a href="">
+                        <li> News & Events</li>
+                    </a>
+                    <a href="">
+                        <li> Careers </li>
+                    </a>
+                    <a href="">
+                        <li> Contact Us</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <hr class="hr" />
+    </div>
+    
+
+    <!-- footer -->
+    <footer class="container-fluid bg-light p-2">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>© Devloped by ajay· <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+    
+  
+
+
+
+
+
+
+
+
+</body>
+
+</html>
